@@ -1,0 +1,22 @@
+package base;
+
+public abstract class Animal extends Coisa {
+    protected String especie;
+
+    public Animal(String nome, String especie, int energia) {
+        super(nome, energia);
+        this.especie = especie;
+    }
+
+    public String getEspecie() {
+        return especie;
+    }
+
+    public abstract void agir();
+
+    @Override
+    public void mostrarEstado() {
+        String estado = vivo ? "vivo" : "morto";
+        System.out.println(especie + " " + nome + " esta " + estado + " com energia " + energia);
+    }
+}
