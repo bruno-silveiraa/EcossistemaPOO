@@ -1,6 +1,6 @@
 # Ecossistema POO
 
-Projeto simples em Java usando Programacao Orientada a Objetos.
+Projeto em Java usando Programacao Orientada a Objetos.
 
 ## Tema
 
