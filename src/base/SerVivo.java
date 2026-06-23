@@ -1,11 +1,11 @@
 package base;
 
-public abstract class Coisa {
+public abstract class SerVivo {
     protected String nome;
     protected int energia;
     protected boolean vivo;
 
-    public Coisa(String nome, int energia) {
+    public SerVivo(String nome, int energia) {
         this.nome = nome;
         this.energia = energia;
         this.vivo = true;

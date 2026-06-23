@@ -1,6 +1,6 @@
 package base;
 
-public class Planta extends Coisa {
+public class Planta extends SerVivo {
     private int tamanho;
 
     public Planta(String nome, int energia, int tamanho) {

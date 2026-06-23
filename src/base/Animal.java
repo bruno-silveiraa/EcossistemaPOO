@@ -1,6 +1,6 @@
 package base;
 
-public abstract class Animal extends Coisa {
+public abstract class Animal extends SerVivo {
     protected String especie;
 
     public Animal(String nome, String especie, int energia) {
