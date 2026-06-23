@@ -11,9 +11,9 @@ Ecossistema com somente animais e plantas:
 
 ## Conceitos de POO usados
 
-- `Coisa`: classe abstrata principal, com atributos comuns.
-- `Animal`: classe abstrata que herda de `Coisa`.
-- `Planta`: classe concreta que herda de `Coisa`.
+- `SerVivo`: classe abstrata principal, com atributos comuns.
+- `Animal`: classe abstrata que herda de `SerVivo`.
+- `Planta`: classe concreta que herda de `SerVivo`.
 - `Coelho`, `Raposa` e `Abelha`: classes concretas que herdam de `Animal`.
 - Polimorfismo no `Main`, usando uma lista de `Animal`.
 - Sobrescrita de metodos com `agir()` e `mostrarEstado()`.
