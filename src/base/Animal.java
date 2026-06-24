@@ -17,6 +17,6 @@ public abstract class Animal extends SerVivo {
     @Override
     public void mostrarEstado() {
         String estado = vivo ? "vivo" : "morto";
-        System.out.println(especie + " " + nome + " esta " + estado + " com energia " + energia);
+        System.out.println("  [" + especie + "] : " + nome + " | Estado: " + estado + " | Energia: " + energia);
     }
 }
