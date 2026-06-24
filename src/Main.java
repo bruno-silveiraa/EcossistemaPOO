@@ -5,13 +5,14 @@ import base.Planta;
 import base.Raposa;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Planta planta = new Planta("Planta geral", 50, 3);
+        Planta planta = new Planta("Rucula", 50, 3);
         Coelho coelho = new Coelho("Nino");
         Raposa raposa = new Raposa("Rubi");
         Abelha abelha = new Abelha("Mel");
@@ -34,7 +35,15 @@ public class Main {
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opcao: ");
 
-            opcao = scanner.nextInt();
+            try {
+                opcao = scanner.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("\nEntrada invalida! Digite apenas numeros.");
+                scanner.nextLine();
+                opcao = -1;
+                continue;
+            }
+            System.out.println();
 
             switch (opcao) {
                 case 1:
