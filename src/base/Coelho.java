@@ -7,9 +7,9 @@ public class Coelho extends Animal {
 
     public void comer(Planta planta) {
         if (vivo && planta.isVivo()) {
-            planta.serConsumida(10);
             ganharEnergia(8);
-            System.out.println(nome + " comeu parte da planta " + planta.getNome());
+            System.out.println("  "+nome + " comeu parte da planta " + planta.getNome() + " (+8 de energia)");
+            planta.serConsumida(10);
         }
     }
 
@@ -17,7 +17,7 @@ public class Coelho extends Animal {
     public void agir() {
         if (vivo) {
             perderEnergia(3);
-            System.out.println(nome + " pulou pelo ecossistema.");
+            System.out.println("  "+nome + " pulou pelo ecossistema.(-3 de energia)");
         }
     }
 }
