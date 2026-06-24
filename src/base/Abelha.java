@@ -7,9 +7,9 @@ public class Abelha extends Animal {
 
     public void polinizar(Planta planta) {
         if (vivo && planta.isVivo()) {
-            planta.crescer();
             perderEnergia(2);
-            System.out.println(nome + " polinizou a planta " + planta.getNome());
+            System.out.println("  "+nome + " polinizou a planta " + planta.getNome());
+            planta.crescer();
         }
     }
 
@@ -17,7 +17,7 @@ public class Abelha extends Animal {
     public void agir() {
         if (vivo) {
             perderEnergia(2);
-            System.out.println(nome + " voou pelo ecossistema.");
+            System.out.println("  "+nome + " voou pelo ecossistema.(-2 de energia)");
         }
     }
 }
